@@ -1,18 +1,20 @@
 body {
     font-family: 'Indie Flower', serif;
     max-width: 1600px;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin: 0 auto;
     background-color: #f5f5f5;
     color: #FFFFFF;
 }
 
 img {
-    padding-top: 20px;
+    margin-top: 1.75rem;
+}
+.promo img {
+    margin-top: -1.3rem;
 }
 
 .container {
-    margin-top: -10px;
     background-color: #C3B091;
     display: grid;
     grid-template-columns: 1fr;
@@ -22,7 +24,7 @@ img {
                          "article"
                          "footer";
     min-height: 100vh;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
 }
 
 header {
@@ -33,6 +35,7 @@ header {
 nav {
     grid-area: nav;
     background-color: #26877F;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -63,7 +66,6 @@ nav a {
 .promo img {
     width: 100%;
     max-width: 1600px;
-    height: auto;
 }
 
 .promo p {
@@ -90,7 +92,7 @@ nav a {
 
 .article-item h2 {
     margin: 0 0 10px;
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     font-weight: bold;
 }
 
@@ -120,6 +122,7 @@ footer {
     background-color: #26877F;
     height: 70px;
     color: #FFFFFF;
+    font-size: 1.5rem;
 }
 
 footer img {
@@ -137,23 +140,39 @@ footer img {
                              "nav";
     }
 
+    .promo img {
+        margin-top: .25rem;
+    }
+
     nav {
+        display: grid;
         position: fixed;
         bottom: 0;
-        width: 100%;
         z-index: 100;
+        width: 100%;
     }
 
     nav ul {
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 0;
+        margin: 0;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+    }
+
+    .promo h1 {
+        font-size: 2rem;
     }
 
     .articles-container {
         grid-template-columns: 1fr;
+        padding-top: 0;
     }
 
     footer {
-        padding-bottom: 70px;
+        padding-bottom: 55px;
+        font-size: 1.1rem;
     }
 }
