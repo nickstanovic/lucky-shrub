@@ -17,7 +17,7 @@ img {
     grid-template-areas: "header"
                          "nav"
                          "main"
-                         "article article article"
+                         "section"
                          "footer";
     min-height: 100vh;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
@@ -31,16 +31,13 @@ header {
 nav {
     grid-area: nav;
     background-color: #26877F;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
 }
 
 nav ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    padding-inline: unset;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 nav li {
@@ -50,30 +47,9 @@ nav li {
 
 nav a {
     display: grid;
-    align-items: center;
-    justify-items: center;
     padding: 10px;
     text-decoration: none;
     color: #FFFFFF;
-    position: relative;
-}
-
-nav a::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #FFFFFF;
-    opacity: 0;
-    transform: translateY(5px);
-    transition: opacity 0.3s, transform 0.3s;
-}
-
-nav a:hover::before {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .main {
@@ -115,8 +91,8 @@ footer img {
 
 @media screen and (max-width: 767px) {
     .container {
-        grid-template-areas: "header"
-                             "main"
+        grid-template-areas: "main"
+                             "header"
                              "section"
                              "footer"
                              "nav";
