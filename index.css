@@ -126,6 +126,10 @@ footer img {
         grid-gap: 0;
     }
 
+    .articles-container {
+        grid-template-columns: 1fr;
+    }
+
     footer {
         padding-bottom: 70px; /* Adjust the value according to the height of your navbar */
     }
