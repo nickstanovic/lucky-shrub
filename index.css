@@ -57,6 +57,34 @@ nav a {
     color: #FFFFFF;
 }
 
+.promo {
+    position: relative;
+}
+
+.promo a {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    opacity: 1;
+    z-index: 1;
+}
+
+.promo a span {
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.promo a:target {
+    animation: none;
+    opacity: 0;
+}
+
+
 .promo h1 {
     font-size: 4rem;
     color: #26877F;
@@ -76,6 +104,8 @@ nav a {
     max-width: 80%;
     margin: 0 auto;
 }
+
+
 
 .articles-container {
     display: grid;
@@ -164,6 +194,13 @@ footer img {
 
     .promo h1 {
         font-size: 2rem;
+    }
+
+    .promo a span {
+        color: #FFFFFF;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
     }
 
     .articles-container {
