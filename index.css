@@ -10,6 +10,7 @@ body {
 img {
     margin-top: 1.75rem;
 }
+
 .promo img {
     margin-top: -1.3rem;
 }
@@ -186,7 +187,7 @@ footer img {
     }
 
     nav a {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .promo h1 {
