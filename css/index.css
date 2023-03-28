@@ -12,7 +12,7 @@ img {
 }
 
 .promo img {
-    margin-top: -3.5rem;
+    margin-top: -1.3rem;
 }
 
 .container {
@@ -53,9 +53,14 @@ nav li {
 
 nav a {
     display: grid;
-    padding: .25rem;
+    padding: .75rem;
     text-decoration: none;
     color: #FFFFFF;
+}
+
+nav a:hover,
+nav a:focus {
+    transform: scale(1.2);
 }
 
 .promo {
@@ -169,7 +174,7 @@ footer img {
     }
 
     .promo img {
-        margin-top: -2rem;
+        margin-top: .25rem;
     }
 
     nav {
