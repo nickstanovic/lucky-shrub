@@ -53,6 +53,10 @@ nav a {
     color: #FFFFFF;
 }
 
+main {
+    margin-top: -6rem;
+}
+
 .promo img {
     display: grid;
     max-width: 100%;
@@ -125,6 +129,10 @@ footer img {
 
     .promo h1 {
         font-size: 2rem;
+    }
+
+    main {
+        margin-top: 0;
     }
 
     footer {
