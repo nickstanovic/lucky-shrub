@@ -5,6 +5,7 @@ body {
     margin: 0 auto;
     background-color: #f5f5f5;
     color: #FFFFFF;
+    text-shadow: 1px 1px 0 black;
 }
 
 img {
@@ -89,6 +90,10 @@ h2 {
     margin: 0.5rem 0;
     font-size: 2rem;
     font-weight: bold;
+}
+
+.image-container img {
+    box-shadow: rgb(0 0 0 / 74%) 0px 3px 8px;
 }
 
 .green-shrubs {
