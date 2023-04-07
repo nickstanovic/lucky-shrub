@@ -23,6 +23,8 @@
     </header>
     <main>
         <h1>Products</h1>
+        <input type="text" id="search-box" placeholder="Search for products" onkeyup="searchProducts()">
+        <div id="results-count"></div>
         <h2 class="green-shrubs">Green Shrubs</h2>
         <section class="shrubs-section">
         <div class="image-container">
@@ -86,5 +88,33 @@
         <img src="img/lucky-shrub-logo-footer.webp" alt="Lucky Shrub Logo">
         &copy; 2023 Lucky Shrub.
     </footer>
+<script>
+    function searchProducts() {
+        let input = document.getElementById("search-box");
+        let filter = input.value.toUpperCase();
+        let shrubsSection = document.getElementsByClassName("shrubs-section");
+        let resultsCount = 0;
+
+        for (let section of shrubsSection) {
+            let imageContainers = section.getElementsByClassName("image-container");
+            for (let container of imageContainers) {
+                let productImage = container.getElementsByTagName("img")[0];
+                if (productImage) {
+                    let altText = productImage.alt;
+                    if (altText.toUpperCase().indexOf(filter) > -1) {
+                        container.style.display = "";
+                        resultsCount++;
+                    } else {
+                        container.style.display = "none";
+                    }
+                }
+            }
+        }
+
+        let resultsCountDiv = document.getElementById("results-count");
+        resultsCountDiv.innerHTML = resultsCount ? `${resultsCount} results found` : "No results found";
+    }
+
+</script>
 </body>
 </html>
