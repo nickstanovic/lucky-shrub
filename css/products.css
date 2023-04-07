@@ -122,7 +122,7 @@ footer img {
     margin-top: .5rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 950px) {
     .container {
         grid-template-areas: "header"
                              "main"
